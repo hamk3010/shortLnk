@@ -1,16 +1,16 @@
 import React from 'react';
-import { browserHistory } from 'react-router';
-import {Links} from '../api/links';
 import LinksList from './LinksList';
 import PrivateHeader from './PrivateHeader';
 import AddLink from './AddLink';
+import LinksListFilters from './LinksListFilters';
 
 export default () => {
     return (
          <div>
-             <PrivateHeader title= "Yo links"/>
-             <LinksList/>
+             <PrivateHeader title= "Your links"/>
+             <LinksListFilters/>
              <AddLink/>
+             <LinksList/>
          </div>
      );
 
